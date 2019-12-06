@@ -1,7 +1,7 @@
 version: '2'
 services:
   mint:
-    image: ubuntu
+    image: alpine
     tty: true
     volumes:
       - ./bin:/bin
