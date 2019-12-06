@@ -1,0 +1,9 @@
+{
+  "name": "workspace",
+  "source-directories": [
+    "source"
+  ],
+  "test-directories": [
+    "tests"
+  ]
+}

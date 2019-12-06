@@ -1,0 +1,14 @@
+version: '2'
+services:
+  mint:
+    image: ubuntu
+    tty: true
+    volumes:
+      - ./bin:/bin
+      - ./workspace:/workspace
+    working_dir: /workspace
+    command: mint start --host 0.0.0.0
+    ports:
+      - 3000:3000
+    environment:
+        - PATH=/bin:$PATH
