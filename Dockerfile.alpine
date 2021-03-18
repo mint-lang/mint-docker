@@ -1,0 +1,16 @@
+FROM crystallang/crystal:0.36.1-alpine AS build
+
+RUN mkdir -p /opt/build
+WORKDIR /opt/build
+RUN git clone https://github.com/mint-lang/mint.git .
+RUN shards install
+RUN crystal build src/mint.cr -o mint --static --release --no-debug
+
+FROM alpine
+RUN mkdir -p /opt/mint
+COPY --from=build /opt/build/mint /bin/mint
+COPY ./bin/entrypoint /bin/entrypoint
+
+WORKDIR /opt/mint
+ENTRYPOINT [ "/bin/entrypoint" ]
+CMD [ "start" ]

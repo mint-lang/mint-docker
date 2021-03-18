@@ -1,14 +1,13 @@
-version: '2'
+version: "2.4"
 services:
   mint:
-    image: alpine
-    tty: true
+    image: mint
+    build:
+      context: ./
+      dockerfile: Dockerfile.alpine
     volumes:
-      - ./bin:/bin
-      - ./workspace:/workspace
-    working_dir: /workspace
-    command: mint start --host 0.0.0.0
+      - ./workspace:/opt/mint
+    working_dir: /opt/mint
+    command: start --host 0.0.0.0
     ports:
       - 3000:3000
-    environment:
-        - PATH=/bin:$PATH

@@ -1,0 +1,6 @@
+#!/bin/sh
+set -eu
+
+if [ -t 1 -a $# -eq 0 ]; then exec sh
+else exec mint $@
+fi
