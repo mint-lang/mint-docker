@@ -1,6 +1,0 @@
-#!/bin/sh
-set -eu
-
-# Begin in project root
-cd "$(git rev-parse --show-toplevel)"
-docker build -f Dockerfile.alpine -t mint .

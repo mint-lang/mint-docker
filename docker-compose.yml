@@ -1,13 +1,9 @@
 version: "2.4"
 services:
   mint:
-    image: mint
-    build:
-      context: ./
-      dockerfile: Dockerfile.alpine
+    image: mintlang/mint:0.12.0
+    working_dir: /opt/mint
     volumes:
       - ./workspace:/opt/mint
-    working_dir: /opt/mint
-    command: start --host 0.0.0.0
     ports:
       - 3000:3000

@@ -1,5 +1,15 @@
 {
   "name": "workspace",
+  "application": {
+    "head": "assets/head.html",
+    "title": "workspace",
+    "icon": "assets/favicon.png"
+  },
+  "external": {
+    "stylesheets": [
+      "assets/style.css"
+    ]
+  },
   "source-directories": [
     "source"
   ],
