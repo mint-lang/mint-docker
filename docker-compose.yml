@@ -1,7 +1,7 @@
 version: "2.4"
 services:
   mint:
-    image: mintlang/mint:0.12.0
+    image: mintlang/mint:latest
     working_dir: /opt/mint
     volumes:
       - ./workspace:/opt/mint
