@@ -1,7 +1,7 @@
 version: "2.4"
 services:
   mint:
-    image: mintlang/mint:latest
+    image: ghcr.io/mint-lang/mint:0.19.0
     working_dir: /opt/mint
     volumes:
       - ./workspace:/opt/mint
