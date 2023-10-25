@@ -1,4 +1,4 @@
-version: "2.4"
+version: "3.7"
 services:
   mint:
     image: ghcr.io/mint-lang/mint:0.19.0
