@@ -85,7 +85,7 @@ You can use plain Docker to achieve the same commands above.
 You will need to pull the latest image:
 
 ```console
-$ docker pull mintlang/mint
+$ docker pull ghcr.io/mint-lang/mint
 ```
 
 If you are on windows you need to change `$(pwd)/workspace` to the absolute path of the `workspace` folder.
