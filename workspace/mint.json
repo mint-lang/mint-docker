@@ -1,14 +1,13 @@
 {
   "name": "workspace",
   "application": {
+    "icon": "assets/favicon.png",
     "head": "assets/head.html",
     "title": "workspace",
-    "icon": "assets/favicon.png"
-  },
-  "external": {
-    "stylesheets": [
-      "assets/style.css"
-    ]
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1, user-scalable=no",
+      "charset": "utf-8"
+    }
   },
   "source-directories": [
     "source"
